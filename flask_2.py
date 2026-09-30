@@ -35,7 +35,7 @@ def add_students():
     student = Student(name = req_data["name"], age = req_data["age"])
     db.session.add(student)
     db.session.commit()
-    return {"message": "Successfully Added!"}
+    return {"message": "Congrats! Successfully Added"}
 
 @app.route("/students", methods = ["GET"])
 def get_students():
